@@ -1,0 +1,59 @@
+:root {
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+
+    --fs-b: 1.25;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+/* header {} */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+}
+/* .social-icons {} */
+
+h1 {
+    font-weight: 300;
+}
+
+h1 span {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--fs-b);
+    font-weight: 600;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
