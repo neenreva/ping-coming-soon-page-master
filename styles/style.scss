@@ -1,0 +1,136 @@
+@import "./reset";
+
+$Blue: hsl(223, 87%, 63%);
+$PaleBlue: hsl(223, 100%, 88%);
+$LightRed: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 57%);
+$VeryDarkBlue: hsl(209, 33%, 12%);
+
+@mixin flexin($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+body {
+  @include flexin(center, center, column);
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  @include flexin(center, center, column);
+  width: 85%;
+}
+
+header {
+  @include flexin(space-around, center, column);
+  width: 100%;
+  height: 13.5rem;
+  text-align: center;
+  img {
+    width: 17%;
+    padding-top: 4.65rem;
+  }
+  h1 {
+    padding-top: 1.25rem;
+    font-size: 1.4rem;
+    color: $Gray;
+    span {
+      font-weight: 700;
+      color: $VeryDarkBlue;
+    }
+  }
+  h2 {
+    font-size: 0.75rem;
+    padding-bottom: 0.35rem;
+    color: $VeryDarkBlue;
+  }
+}
+
+.form-container {
+  @include flexin(center, center, column);
+  width: 100%;
+  input,
+  button {
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+  }
+  input {
+    margin: 1rem 0 0.5rem 0;
+    border: 1px solid $PaleBlue;
+    padding-left: 2rem;
+    color: $VeryDarkBlue;
+  }
+  input::placeholder {
+    color: $PaleBlue;
+  }
+  button {
+    background-color: $Blue;
+    color: white;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 5px 10px $PaleBlue;
+  }
+}
+
+.dashboard {
+  @include flexin(center, center, column);
+  padding: 4rem 0;
+  img {
+    width: 100%;
+  }
+}
+
+.social-icons {
+  margin: 3.25rem 0 0.75rem 0;
+  i {
+    padding: 0.5rem;
+    margin: 0 0.2rem;
+    border: 1px solid $PaleBlue;
+    border-radius: 50%;
+    color: $Blue;
+  }
+}
+
+.copyright {
+  p {
+    padding: 1rem;
+    font-size: 0.63rem;
+  }
+}
+
+footer {
+  p {
+    font-size: 0.6rem;
+    color: $Blue;
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: $Gray;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 50%;
+  }
+
+  header {
+      height: fit-content;
+      img {
+          padding: 0;
+      }
+      h1 {
+          padding: 0;
+      }
+      h2 {
+          padding: 0;
+      }
+  }
+
+}
