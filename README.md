@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge. I used scss for the first time trying to gain some experience and finding out it makes life a little easier for styling. I really like that in sass and scss you can nest styles. In my mind I can keep track of the elements easier while styling. Varibles are a little cleaner as well. Mixins are going to be a time saver especially in larger projects that use set styling rules. Overall I will continue to use scss going forward simply for the cross broswer support it adds. This project in particular isn't the best example. In order for me to copy the layout I had to fiddle with padding and margins in elements rather than just setting up flex boxes with values like space-around.
+Thanks for checking out this front-end coding challenge. I used scss for the first time trying to gain some experience and finding out it makes life a little easier for styling. I really like that in sass and scss you can nest styles. In my mind I can keep track of the elements easier while styling. Variables are a little cleaner as well. Mixins are going to be a time saver especially in larger projects that use set styling rules. Overall I will continue to use scss going forward simply for the cross browser support it adds. This project in particular isn't the best example. In order for me to copy the layout I had to fiddle with padding and margins in elements rather than just setting up flex boxes with values like space-around.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
