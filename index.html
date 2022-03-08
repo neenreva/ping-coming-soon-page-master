@@ -31,20 +31,22 @@
     <main>
       <header>
         <img src="images/logo.svg" alt="" />
-        <h1>
-          We are launching <span>soon!</span>
-        </h1>
+        <h1>We are launching <span>soon!</span></h1>
         <h2>Subscribe and get notified</h2>
       </header>
       <div class="form-container">
-        <input class="form-container__input" type="email" placeholder="Your email address"/>
+        <div class="input-error">
+          <input
+            class="form-container__input"
+            type="email"
+            placeholder="Your email address"
+          />
+          <p class="error hidden">Please provide valid email address</p>
+        </div>
         <button class="form-container__btn">Notify Me</button>
       </div>
       <div class="dashboard">
-        <img
-          src="images/illustration-dashboard.png"
-          alt="App Illustration"
-        />
+        <img src="images/illustration-dashboard.png" alt="App Illustration" />
       </div>
       <div class="social-icons">
         <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
@@ -59,10 +61,18 @@
     <footer>
       <p class="attribution">
         Challenge by
-        <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a class="attribution__link" href="https://github.com/neenreva" target="_blank">neenreva</a>.
+        <a
+          class="attribution__link"
+          href="https://github.com/neenreva"
+          target="_blank"
+          >neenreva</a
+        >.
       </p>
     </footer>
   </body>
